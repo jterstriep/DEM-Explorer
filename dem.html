@@ -1,0 +1,39 @@
+<head>
+  <title>dem</title>
+</head>
+
+<body>
+  <h2> HERE </h2>
+
+  {{> mainmap}}
+
+  {{> dems}}
+</body>
+
+<template name="mainmap">
+  <div id="mainmap" class="map mainmap" style="height:400px;"></div>
+</template>
+
+<template name="dems">
+  <h2> LIST </h2>
+  <div id="dems">
+    {{#each demList}}
+      <div class="dem">{{title}}</div>
+    {{/each}}
+  </div>
+  <div>end</div>
+</template>
+
+<template name="addDemRequest">
+  <form>
+    <input type="text" name="title">
+    <input type="submit" name="Add Request">
+  </form>
+</template>
+
+<template name="home">
+</template>
+
+<template name="about">
+  <div>about</div>
+</template>
